@@ -1,7 +1,7 @@
 import request from 'superagent'
 
 request.get('https://api.github.com/users/mikebond84')
-  .auth('mikebond84', 'dc8f7a4a2c8ae1bf82df673c5f1756788130c515')
+  .auth('mikebond84')
   .then(response => {
     displayResults(response.body)
   })
